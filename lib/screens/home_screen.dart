@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           color: AppColors.lightRed,
                         ),
-                        child: Column(children: [
+                        child: Column(children: const [
                           //you are here
                         ]),
                       ),

@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:musketeer_app/models/category_item.dart';
 import 'package:musketeer_app/styles/colors.dart';
 
 class ItemPlaceholder extends StatelessWidget {
-  const ItemPlaceholder({super.key});
+  const ItemPlaceholder({
+    Key? key,
+    required this.item,
+  }) : super(key: key);
+  final CategoryItem item;
+  final height = 200.00;
+  final width = 175.00;
 
   @override
   Widget build(BuildContext context) {
