@@ -8,8 +8,8 @@ class CategoryItem {
 
 var categoryItemsDemo = [
   CategoryItem(
-    name: "Fresh Fruits & Vegetables",
-    imagePath: "assets/images/categories_images/fruit.png",
+    name: "Fruit & Veg",
+    imagePath: "musketeer_app/lib/Icons/Categories/Raw/Fruit & Veg.png.png",
   ),
   CategoryItem(
     name: "Cooking Oil",

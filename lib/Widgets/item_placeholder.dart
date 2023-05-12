@@ -33,9 +33,28 @@ class ItemPlaceholder extends StatelessWidget {
                   color: const Color.fromARGB(255, 255, 255, 255),
                   borderRadius: BorderRadius.circular(22),
                 ),
+                child: imageWidget(),
               ),
             ),
+            SizedBox(
+              height: 20,
+              child: Center(
+                child: Text(
+                  item.name,
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            )
           ],
         ));
+  }
+
+  Widget imageWidget() {
+    return Container(
+      child: Image.asset(
+        item.imagePath,
+        fit: BoxFit.contain,
+      ),
+    );
   }
 }

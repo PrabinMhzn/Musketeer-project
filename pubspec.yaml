@@ -72,6 +72,7 @@ flutter:
       - lib/Icons/Menu Bar/
       - lib/Icons/Home Page/
       - lib/Icons/Miscell/
+      - lib/Icons/Categories/Raw
 
   #   - images/a_dot_ham.jpeg
 

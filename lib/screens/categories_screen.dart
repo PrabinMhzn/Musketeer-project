@@ -18,7 +18,7 @@ class CategoriesScreen extends StatelessWidget {
         child: Column(
           children: [
             const SearchBarWidget(),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             Expanded(child: getStaggeredGridView(context)),
           ],
         ),
@@ -29,12 +29,12 @@ class CategoriesScreen extends StatelessWidget {
   Widget getStaggeredGridView(BuildContext context) {
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(
-        vertical: 10,
+        vertical: 3,
       ),
       child: StaggeredGrid.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 3.0,
-        crossAxisSpacing: 4.0,
+        crossAxisCount: 3,
+        mainAxisSpacing: 2.0,
+        crossAxisSpacing: 2.0,
         children: categoryItemsDemo.asMap().entries.map<Widget>((e) {
           CategoryItem categoryItem = e.value;
           return GestureDetector(
@@ -42,7 +42,7 @@ class CategoriesScreen extends StatelessWidget {
               onCategoryItemClicked(context, categoryItem);
             },
             child: Container(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(2),
               child: ItemPlaceholder(
                 item: categoryItem,
               ),
