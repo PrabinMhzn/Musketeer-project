@@ -15,7 +15,7 @@ class ItemPlaceholder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 100,
-        height: 130,
+        height: 140,
         margin: const EdgeInsets.all(4),
         decoration: BoxDecoration(
           color: AppColors.widgetGrey,
@@ -37,7 +37,7 @@ class ItemPlaceholder extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 32,
               child: Center(
                 child: Text(
                   item.name,
@@ -50,11 +50,9 @@ class ItemPlaceholder extends StatelessWidget {
   }
 
   Widget imageWidget() {
-    return Container(
-      child: Image.asset(
-        item.imagePath,
-        fit: BoxFit.contain,
-      ),
+    return Image.asset(
+      item.imagePath,
+      fit: BoxFit.contain,
     );
   }
 }

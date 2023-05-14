@@ -8,5 +8,5 @@ ThemeData themeData = ThemeData(
   fontFamily: gilroyFontFamily,
   visualDensity: VisualDensity.adaptivePlatformDensity,
   colorScheme:
-      ColorScheme.fromSwatch().copyWith(secondary: AppColors.primaryColor),
+      ColorScheme.fromSwatch().copyWith(secondary: AppColors.selectedGold),
 );

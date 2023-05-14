@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musketeer_app/Dashboard/dashboard_1.dart';
+import 'package:musketeer_app/screens/loginscreen.dart';
+import 'package:musketeer_app/styles/colors.dart';
 
 class WelcomeScreen1 extends StatelessWidget {
   const WelcomeScreen1({super.key});
@@ -24,12 +26,15 @@ class WelcomeScreen1 extends StatelessWidget {
               ),
 
               const SizedBox(height: 30),
-              const Text(
-                'Musketeer',
-                style: TextStyle(
-                    color: Color.fromARGB(255, 58, 58, 58),
-                    fontSize: 40,
-                    fontFamily: 'Roboto'),
+              const Center(
+                child: Text(
+                  'Musketeer',
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 58, 58, 58),
+                      fontSize: 40,
+                      fontFamily: 'Roboto',
+                      decoration: TextDecoration.none),
+                ),
               ),
               const SizedBox(height: 70),
               //Search button
@@ -40,9 +45,7 @@ class WelcomeScreen1 extends StatelessWidget {
                       onPressed: () {},
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            const Color.fromARGB(255, 224, 102, 102)),
-                        foregroundColor: MaterialStateProperty.all<Color>(
-                            const Color.fromRGBO(26, 26, 184, 0.612)),
+                            AppColors.lightRed),
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             const EdgeInsets.all(20)),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
@@ -78,12 +81,12 @@ class WelcomeScreen1 extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const DashboardScreen()),
+                              builder: (context) => const LoginScreen()),
                         );
                       },
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            const Color.fromARGB(212, 83, 231, 155)),
+                            AppColors.lightGreen),
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             const EdgeInsets.all(20)),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
@@ -113,12 +116,16 @@ class WelcomeScreen1 extends StatelessWidget {
                   width: 320,
                   height: 90,
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const DashboardScreen()),
+                        );
+                      },
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            const Color.fromARGB(212, 83, 169, 231)),
-                        foregroundColor: MaterialStateProperty.all<Color>(
-                            const Color.fromRGBO(26, 26, 184, 0.612)),
+                            AppColors.lightBlue),
                         padding: MaterialStateProperty.all<EdgeInsets>(
                             const EdgeInsets.all(20)),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
