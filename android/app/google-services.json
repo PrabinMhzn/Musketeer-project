@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "101393840835",
+    "firebase_url": "https://musketeerappproject-default-rtdb.firebaseio.com",
+    "project_id": "musketeerappproject",
+    "storage_bucket": "musketeerappproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101393840835:android:00a62662d01ebffe3bc076",
+        "android_client_info": {
+          "package_name": "com.example.musketeer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101393840835-dcu4d0k7ora3l5i42oajqcg4pij3tcqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC84jP1rkzaH94oMch5ApKYSlsgOKT6xpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101393840835-dcu4d0k7ora3l5i42oajqcg4pij3tcqv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "101393840835-68jnhpr0arpk624hi64oa4g38n4qhs92.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.musketeerApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
